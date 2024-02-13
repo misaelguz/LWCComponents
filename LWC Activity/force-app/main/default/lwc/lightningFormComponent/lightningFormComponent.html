@@ -1,0 +1,15 @@
+<template>
+    <!-- <lightning-record-edit-form object-api-name="Contact" record-id={record} onsuccess={handleSuccess}> -->
+    <div>
+        <lightning-input label="First Name" field-name="FirstName" onchange={handleChange} value={record.FirstName}> </lightning-input>
+        <lightning-input label="Last Name" field-name="LastName" onchange={handleChange} value={record.LastName}> </lightning-input>
+        <lightning-input label="Email" field-name="Email" onchange={handleChange} value={record.Email}> </lightning-input>
+        <div class="slds-var-m-top_medium">
+            <lightning-button variant="brand"  label="Save" onclick={handleSave}>
+            </lightning-button>
+            <lightning-button variant="brand"  label="Cancel" onclick={handleCancel}>
+            </lightning-button>
+        </div>
+    </div>
+    <!-- </lightning-record-edit-form> -->
+</template>
